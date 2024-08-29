@@ -1,0 +1,15 @@
+[project]
+name = "learn-fastapi"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "codest", email = "thecodest@ya.ru" }
+]
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[tool.rye]
+managed = true
+virtual = true
+dev-dependencies = []

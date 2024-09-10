@@ -1,0 +1,18 @@
+name: 'learn-fastapi'
+
+services:
+  db:
+    image: postgres:16.4-alpine
+    container_name: learn-db
+    restart: unless-stopped
+    ports:
+      - 54322:5432
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=fastapi
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+
+volumes:
+  db_data:

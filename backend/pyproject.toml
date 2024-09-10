@@ -8,9 +8,12 @@ authors = [
 dependencies = [
     "fastapi>=0.112.2",
     "uvicorn[standard]>=0.30.6",
+    "sqlalchemy>=2.0.34",
+    "psycopg>=3.2.1",
+    "alembic>=1.13.2",
 ]
 readme = "README.md"
-requires-python = ">= 3.8"
+requires-python = ">= 3.12"
 
 [tool.rye]
 managed = true

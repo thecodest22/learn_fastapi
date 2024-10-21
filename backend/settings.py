@@ -14,6 +14,7 @@ class Settings(BaseSettings):
         env_file='../infra_learn_fastapi/.env',
         env_file_encoding='utf-8',
         extra='ignore',
+        env_ignore_empty=True,
         validate_default=False
     )
 
